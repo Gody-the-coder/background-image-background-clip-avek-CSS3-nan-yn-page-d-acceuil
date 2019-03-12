@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #fff;
+}
+
+.clip-envelope{
+    background: url('./img/plat.jpeg') center center/cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.clip-envelope::before{
+    content: '';
+    background: rgba(83, 92, 46, 0.75);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+}
+
+.clip-flex{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.clip-container{
+    max-width: 960px;
+    padding: 2rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.clip-container h1{
+    font-size: 12rem;
+    background: url('./img/pizza.jpeg') center center/cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/*  parti mobile  */
+
+@media(max-width: 450px){
+    .clip-container h1{
+        font-size: 6rem;
+    } 
+}
+
+.clip-container p{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+@media(max-width: 450px){
+.clip-container p{
+    font-size: 1rem;
+}
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    background: rgb(173, 173, 25);
+    border-radius: 5px;
+    transition: font-size 0.4s ease;
+}
+
+.btn:hover{
+    font-size: 1.2rem;
+    background: #fff;
+    color: rgb(209, 209, 16);
+   
+}
